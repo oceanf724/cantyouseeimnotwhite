@@ -9,13 +9,21 @@
 </head>
 <body>
     <section class="text-1">
-        <img src="images/page2-text1.png" alt="narrative text 1">
+        <img id="first" src="images/page2-text1.png" alt="narrative text 1">
     </section>
     <section class="text-2">
-        <img src="images/page2-text2.png" alt="narrative text 2">
+        <img id="second" src="images/page2-text2.png" alt="narrative text 2">
     </section>
     <section class="illustration">
-        <a href="page03.index.html"><img src="images/page2-illustration.png" alt="illustration"></a>
+        <a href="page03.index.html"><img id="third" src="images/page2-illustration.png" alt="illustration"></a>
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$("page-1").click(function(){
+    $("#first").fadeIn();
+    $("#second").fadeIn(slow);
+    $("#third").fadeIn(slow);
+});
+</script>
 </html>

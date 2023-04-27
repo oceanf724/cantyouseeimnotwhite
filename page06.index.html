@@ -8,23 +8,37 @@
     <title>Can't You See I'm Not White?</title>
 </head>
 <body>
-    <section class="text-1">
-        <img src="images/page6-text1.png" alt="narrative text 1">
-    </section>
-    <section class="illustration-1">
-        <img src="images/page6-illustration1.png" alt="illustration">
-    </section>
-    <section class="text-2">
-        <img src="images/page6-text2.png" alt="narrative text 2">
-    </section>
-    <section class="text-3">
-        <img src="images/page6-text3.png" alt="narrative text 3">
-    </section>
-    <section class="illustration-2">
-        <a href="page07.index.html"><img src="images/page6-illustration2.png" alt="illustration"></a>
-    </section>
-    <section class="text-4">
-        <img src="images/page6-text4.png" alt="narrative text 4">
+    <section class="page-6">
+        <img id="first" src="images/page6-text1.png" alt="narrative text 1">
+        
+        <img id="second" src="images/page6-illustration1.png" alt="illustration">
+
+        <img id="third" src="images/page6-text2.png" alt="narrative text 2">
+
+        <img id="fourth" src="images/page6-text3.png" alt="narrative text 3">
+
+        <a href="page07.index.html"><img id="fifth" src="images/page6-illustration2.png" alt="illustration"></a>
+
+        <img id="sixth" src="images/page6-text4.png" alt="narrative text 4">
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$("page-6").mouseenter(function(){
+    $("#first").fadeIn();
+    $("#second").fadeIn("slow");
+    $("#third").fadeIn(3000);
+});
+$("page-6").mouseenter(function(){
+    $("#first").fadeOut();
+    $("#second").fadeOut("slow");
+    $("#third").fadeOut(3000);
+});
+$("page-6").mouseenter(function(){
+    $("#fourth").fadeIn();
+    $("#fifth").fadeIn("slow");
+    $("#sixth").fadeIn(3000);
+});
+
+</script>
 </html>

@@ -11,14 +11,21 @@
     <section class="text-1">
         <img src="images/page10-text1.png" alt="narrative text 1">
     </section>
-    <section class="illustration-1">
-        <a href="page11.index.html"><img src="images/page10-illustration1.png" alt="illustration 2"></a>
-    </section>
-    <section class="illustration-2">
-        <a href="page11.index.html"><img src="images/page10-illustration2.png" alt="illustration 2"></a>
-    </section>
-    <section class="illustration-3">
-        <a href="page11.index.html"><img src="images/page10-illustration3.png" alt="illustration 2"></a>
+    <section class="illustrations">
+        <a href="page11.index.html"><img id="first" src="images/page10-illustration1.png" alt="illustration 2"></a>
+
+        <a href="page11.index.html"><img id="second" src="images/page10-illustration2.png" alt="illustration 2"></a>
+
+        <a href="page11.index.html"><img id="third"  src="images/page10-illustration3.png" alt="illustration 2"></a>
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</script>
+<script>
+    $("page-9").click(function(){
+        $("#first").fadeIn();
+        $("#second").fadeIn(slow);
+        $("#second").fadeIn(3000);
+    });
+ </script>
 </html>

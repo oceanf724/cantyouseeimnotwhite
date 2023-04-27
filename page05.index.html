@@ -9,10 +9,19 @@
 </head>
 <body>
     <section class="text-1">
-        <img src="images/page5-text1.png" alt="narrative text 1">
+        <img id="first" src="images/page5-text1.png" alt="narrative text 1">
     </section>
     <section class="illustration">
-        <a href="page06.index.html"><img src="images/page5-illustration.png" alt="illustration"></a>
+        <a href="page06.index.html"><img id="second" src="images/page5-illustration.png" alt="illustration"></a>
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$("text-1").mouseenter(function(){
+    $("#first").fadeIn("slow");
+});
+$("illustration").mouseenter(function(){
+    $("#second").fadeIn("slow");
+});
+</script>
 </html>
