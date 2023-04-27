@@ -8,3 +8,7 @@ body {
 img {
     width: 50%
 }
+
+.section1 {
+    align-content: center;
+}
