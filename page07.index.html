@@ -13,21 +13,21 @@
       </style>
 </head>
 <body>
-  <section class="illustration">
+  <section id="one">
     <a href="page08.index.html"><img src="images/page7-illustration.png" alt="illustration"></a>
 </section>
-  <section class="text-1">
-    <img id="first" src="images/page7-text1.png" alt="narrative text 1">
+  <section id="two">
+    <img class="first" src="images/page7-text1.png" alt="narrative text 1">
 </section>
-<section class="text-2">
-    <img id="second" src="images/page7-text2.png" alt="narrative text 2">
+<section id="three">
+    <img class="second" src="images/page7-text2.png" alt="narrative text 2">
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-$("text-1").mouseenter(function(){
+$(".two").click(function(){
     $("#first").fadeIn("slow");
 });
-$("text-2").mouseenter(function(){
+$(".three").click(function(){
     $("#second").fadeIn("slow");
 });
 </script>

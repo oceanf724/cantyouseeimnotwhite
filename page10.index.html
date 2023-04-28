@@ -8,10 +8,10 @@
     <title>Can't You See I'm Not White?</title>
 </head>
 <body>
-    <section class="text-1">
+    <section id="one">
         <img src="images/page10-text1.png" alt="narrative text 1">
     </section>
-    <section class="illustrations">
+    <section id="two">
         <a href="page11.index.html"><img id="first" src="images/page10-illustration1.png" alt="illustration 2"></a>
 
         <a href="page11.index.html"><img id="second" src="images/page10-illustration2.png" alt="illustration 2"></a>
@@ -22,10 +22,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </script>
 <script>
-    $("page-9").click(function(){
+    $(".two").click(function(){
         $("#first").fadeIn();
         $("#second").fadeIn(slow);
-        $("#second").fadeIn(3000);
+        $("#third").fadeIn(3000);
     });
  </script>
 </html>

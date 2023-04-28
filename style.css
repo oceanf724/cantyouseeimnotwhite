@@ -7,14 +7,78 @@ body {
     width: 100vw;
     background-color: #1d2c8c;
 }
-  section {
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-  }
 img {
-    width: 50%
+  width: 70%;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center; /* vertical aligning */
+  justify-content: center; /* horizontal aligning */
+}
+#one {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#two {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-items: center;
+}
+#three {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-items: bottom; /* vertical aligning */
+  justify-content: right; /* horizontal aligning */
+  padding: 80px;
+}
+#four {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#dialog-anim {
+  position: relative;
+  border: 1px solid red;
+}
+#dialog-anim .d {
+  position: absolute;
+  opacity: 0;
+  transition: 500ms;
+}
+
+#dialog-anim .d2 {
+  top: 110px;
+  left: -110px;
+  transition-delay: 500ms;
+}
+#dialog-anim .d3 {
+  top: 220px;
+  left: -110px;
+  transition-delay: 1000ms;
+}
+#dialog-anim .d4 {
+  top: 330px;
+  left: -110px;
+  transition-delay: 1500ms;
+}
+#dialog-anim .d5 {
+  top: 0;
+  right: -110px;
+  transition-delay: 1000ms;
+}
+#dialog-anim .d6 {
+  top: 110px;
+  right: -110px;
+  transition-delay: 2500ms;
+}
+#dialog-anim .d7 {
+  top: 220px;
+  right: -110px;
+  transition-delay: 3000ms;
+}
+
+#dialog-anim .fadeIn {
+  opacity: 1;
 }

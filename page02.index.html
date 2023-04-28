@@ -8,22 +8,26 @@
     <title>Can't You See I'm Not White?</title>
 </head>
 <body>
-    <section class="text-1">
-        <img id="first" src="images/page2-text1.png" alt="narrative text 1">
+    <section id="one">
+        <img class="first" src="images/page2-text1.png" alt="narrative text 1">
     </section>
-    <section class="text-2">
-        <img id="second" src="images/page2-text2.png" alt="narrative text 2">
+    <section id="two">
+        <img class="second" src="images/page2-text2.png" alt="narrative text 2">
     </section>
-    <section class="illustration">
-        <a href="page03.index.html"><img id="third" src="images/page2-illustration.png" alt="illustration"></a>
+    <section id="three">
+        <a href="page03.index.html"><img class="third" src="images/page2-illustration.png" alt="illustration"></a>
     </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-$("page-1").click(function(){
+$(".one").click(function(){
     $("#first").fadeIn();
-    $("#second").fadeIn(slow);
-    $("#third").fadeIn(slow);
+});
+$(".two").click(function(){
+    $("#second").fadeIn();
+});
+$(".three").click(function(){
+    $("#third").fadeIn();
 });
 </script>
 </html>

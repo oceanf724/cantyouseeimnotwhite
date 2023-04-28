@@ -8,11 +8,28 @@
         <title>Can't You See I'm Not White?</title>
     </head>
     <body>
-        <section class="introduction">
-            <img id="first" src="images/title.png" alt="title">
+        <section id="two">
+            <img class="second" src="images/title.png" alt="title">
+        </section>
 
-            <a href="page01.index.html"><img id="first" src="images/credentials.png" alt="artist credit"></a>
+        <section id="one">
+            <a href="page01.index.html"><img class="first" src="images/credentials.png" alt="artist credit"></a>
+        </section>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let one = document.getElementById('one')
+        one.scrollIntoView({ block: 'start', behavior: 'instant' })
+        $('.first').click(function () {
+          let two = document.getElementById('two')
+          two.scrollIntoView({ block: 'start', behavior: 'smooth' })
+        })
+
+        $('.second').click(function () {
+        let two = document.getElementById('two')
+      two.scrollIntoView({ block: 'start', behavior: 'smooth' })
+        setTimeout(startFour, 1000)
+      })
+    </script>
     
 </html>

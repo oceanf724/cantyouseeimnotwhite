@@ -8,20 +8,25 @@
     <title>Can't You See I'm Not White?</title>
 </head>
 <body>
-    <section class="text-1">
-        <img id="first" src="images/page5-text1.png" alt="narrative text 1">
+    <section id="one">
+        <img class="first" src="images/page5-text1.png" alt="narrative text 1">
     </section>
-    <section class="illustration">
-        <a href="page06.index.html"><img id="second" src="images/page5-illustration.png" alt="illustration"></a>
+    <section id="two">
+        <div id="dialog-anim">
+            <a href="page06.index.html"><img class="d d1" src="images/page5-illustration1.png" alt=""></a>
+            <img class="d d2" src="images/page5-illustration2.png" alt="">
+            <img class="d d3" src="images/page5-illustration3.png" alt="">
+            <img class="d d4" src="images/page5-illustration4.png" alt="">
+            <img class="d d5" src="images/page5-illustration5.png" alt="">
+            <img class="d d6" src="images/page5-illustration6.png" alt="">
+            <img class="d d7" src="images/page5-illustration7.png" alt="">
+        </div>  
     </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-$("text-1").mouseenter(function(){
-    $("#first").fadeIn("slow");
-});
-$("illustration").mouseenter(function(){
-    $("#second").fadeIn("slow");
-});
+      $('.two').click(function startTwo() {}
+       
+      $('#dialog-anim').find('.d').addClass('fadeIn'){}
 </script>
 </html>
