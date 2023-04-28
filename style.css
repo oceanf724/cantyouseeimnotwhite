@@ -15,8 +15,8 @@ section {
   height: 100vh;
   margin: auto;
   display: flex;
-  align-items: center; /* vertical aligning */
-  justify-content: center; /* horizontal aligning */
+  align-items: center;
+  justify-content: center; 
 }
 #one {
   grid-column: 2/3;
@@ -30,8 +30,6 @@ section {
 #three {
   grid-column: 1/2;
   grid-row: 2/3;
-  align-items: bottom; /* vertical aligning */
-  justify-content: right; /* horizontal aligning */
   padding: 80px;
 }
 #four {
@@ -40,37 +38,44 @@ section {
 }
 #dialog-anim {
   position: relative;
-  border: 1px solid red;
+  align-content: center;
+  justify-content: center;
 }
 #dialog-anim .d {
   position: absolute;
-  opacity: 0;
+  opacity: 0; 
   transition: 500ms;
 }
 
+#dialog-anim .d1 {
+  top: -5px;
+  left: 10px;
+  transition-delay: 500ms;
+}
+
 #dialog-anim .d2 {
-  top: 110px;
-  left: -110px;
+  top: -15px;
+  left: -15px;
   transition-delay: 500ms;
 }
 #dialog-anim .d3 {
-  top: 220px;
-  left: -110px;
+  top: -5px;
+  left: -2px;
   transition-delay: 1000ms;
 }
 #dialog-anim .d4 {
-  top: 330px;
-  left: -110px;
+  top: -15px;
+  left: -10px;
   transition-delay: 1500ms;
 }
 #dialog-anim .d5 {
-  top: 0;
-  right: -110px;
+  top: -10px;
+  right: 430px;
   transition-delay: 1000ms;
 }
 #dialog-anim .d6 {
-  top: 110px;
-  right: -110px;
+  top: -20px;
+  right: 435px;
   transition-delay: 2500ms;
 }
 #dialog-anim .d7 {
