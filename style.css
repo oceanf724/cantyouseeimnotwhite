@@ -61,8 +61,7 @@ section {
 
 #dialog-anim {
   position: relative;
-  align-content: center;
-  justify-content: center;
+  border: 1px solid red;
 }
 #dialog-anim .d {
   position: absolute;
@@ -88,23 +87,18 @@ section {
 }
 #dialog-anim .d4 {
   top: -15px;
-  left: -10px;
+  left: -5px;
   transition-delay: 1500ms;
 }
 #dialog-anim .d5 {
-  top: -10px;
-  right: 430px;
+  top: -4px;
+  right: 2px;
   transition-delay: 1000ms;
 }
 #dialog-anim .d6 {
-  top: -20px;
-  right: 435px;
+  top: -14px;
+  right: 2px;
   transition-delay: 2500ms;
-}
-#dialog-anim .d7 {
-  top: 220px;
-  right: -110px;
-  transition-delay: 3000ms;
 }
 
 #dialog-anim .fadeIn {
