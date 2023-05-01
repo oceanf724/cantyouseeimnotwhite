@@ -9,32 +9,37 @@
 </head>
 <body>
     <section id="one">
-        <a href="page06.index.html"><img class="first" src="images/page5-text1.png" alt=""></a>
+        <img class="first" src="images/page6-text1.png" alt="narrative text 1">
+        
+        <img class="second" src="images/page6-illustration1.png" alt="illustration">
+
+        <img class="third" src="images/page6-text2.png" alt="narrative text 2">
     </section>
-    <section id="two">
-        <div id="dialog-anim">
-            <img class="d d1" src="images/page5-illustration2.png" alt="">
-            <img class="d d2" src="images/page5-illustration3.png" alt="">
-            <img class="d d3" src="images/page5-illustration4.png" alt="">
+    <section id="third">
+        <img class="fourth" src="images/page6-text3.png" alt="narrative text 3">
 
-            <img class="second" src="images/page5-illustration1.png">
+        <a href="page06.index.html"><img class="fifth" src="images/page6-illustration2.png" alt="illustration"></a>
 
-            <img class="d d4" src="images/page5-illustration5.png" alt="">
-            <img class="d d5" src="images/page5-illustration6.png" alt="">
-            <img class="d d6" src="images/page5-illustration7.png" alt="">
-        </div>  
+        <img class="sixth" src="images/page6-text4.png" alt="narrative text 4">
     </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-    $('.second').click(function () {
-        let two = document.getElementById('two')
-       two.scrollIntoView({ block: 'start', behavior: 'smooth' })
-        setTimeout(startFour, 1000)
-      })
+$(".one").click(function(){
+    $("#first").fadeIn();
+    $("#second").fadeIn("slow");
+    $("#third").fadeIn(3000);
+});
+$(".one").click(function(){
+    $("#first").fadeOut();
+    $("#second").fadeOut("slow");
+    $("#third").fadeOut(3000);
+});
+$(".one").click(function(){
+    $("#fourth").fadeIn();
+    $("#fifth").fadeIn("slow");
+    $("#sixth").fadeIn(3000);
+});
 
-      function startTwo() {
-        $('#dialog-anim').find('.d').addClass('fadeIn')
-      }
 </script>
 </html>

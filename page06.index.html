@@ -6,39 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Can't You See I'm Not White?</title>
+    <style>
+      body {
+        background-image: url('images/page7-background.png');
+      }
+      </style>
 </head>
 <body>
-    <section id="one">
-        <img class="first" src="images/page6-text1.png" alt="narrative text 1">
-        
-        <img class="second" src="images/page6-illustration1.png" alt="illustration">
-
-        <img class="third" src="images/page6-text2.png" alt="narrative text 2">
-
-        <img class="fourth" src="images/page6-text3.png" alt="narrative text 3">
-
-        <a href="page07.index.html"><img class="fifth" src="images/page6-illustration2.png" alt="illustration"></a>
-
-        <img class="sixth" src="images/page6-text4.png" alt="narrative text 4">
-    </section>
+  <section id="one">
+    <a href="page07.index.html"><img src="images/page7-illustration.png" alt="illustration"></a>
+</section>
+  <section id="two">
+    <img class="first" src="images/page7-text1.png" alt="narrative text 1">
+</section>
+<section id="three">
+    <img class="second" src="images/page7-text2.png" alt="narrative text 2">
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-$(".one").click(function(){
-    $("#first").fadeIn();
+$(".two").click(function(){
+    $("#first").fadeIn("slow");
+});
+$(".three").click(function(){
     $("#second").fadeIn("slow");
-    $("#third").fadeIn(3000);
 });
-$(".one").click(function(){
-    $("#first").fadeOut();
-    $("#second").fadeOut("slow");
-    $("#third").fadeOut(3000);
-});
-$(".one").click(function(){
-    $("#fourth").fadeIn();
-    $("#fifth").fadeIn("slow");
-    $("#sixth").fadeIn(3000);
-});
-
 </script>
 </html>

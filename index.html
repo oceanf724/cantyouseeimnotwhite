@@ -8,21 +8,32 @@
         <title>Can't You See I'm Not White?</title>
     </head>
     <body>
-        <section id="two">
-            <img class="first" src="images/title.png" alt="">
-        </section>
-        <section id="one">
-            <a href="page01.index.html"><img class="second" src="images/credentials.png" alt=""></a>
-        </section>
-    </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
+        <main>
+            <section id="two">
+                <img class="second" src="images/credentials.png" alt="" />
+            </section>
+            <section id="one">
+                <img class="first" src="images/title.png" alt="" />
+            </section>
+        
+            <section id="three">
+                <img class="third" src="images/page1-text1.png" alt="" />
+                <a href="page01.index.html"> <img class="third" src="images/page1-text2.png" alt="" /></a>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script>
         let one = document.getElementById('one')
         one.scrollIntoView({ block: 'start', behavior: 'instant' })
         $('.first').click(function () {
-          let two = document.getElementById('two')
-          two.scrollIntoView({ block: 'start', behavior: 'smooth' })
+            let two = document.getElementById('two')
+            two.scrollIntoView({ block: 'start', behavior: 'smooth' })
         })
-    </script>
-    
+        $('.third').click(function () {
+        let four = document.getElementById('four')
+        four.scrollIntoView({ block: 'start', behavior: 'smooth' })
+        setTimeout(startFour, 1000)
+      })
+        </script>
+  </body>
 </html>

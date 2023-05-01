@@ -9,18 +9,26 @@
 </head>
 <body>
     <section id="one">
-        <img class="first" src="images/page4-text1.png" alt="narrative text 1">
-        
-        <a href="page05.index.html"><img class="second" src="images/page4-illustration.png" alt="illustration"></a>
+        <img class="fade-in-image" src="images/page5-text1.png" alt="">
+    </section>
+    <section id="three">
+        <div id="dialog-anim">
+            <img class="d d1" src="images/page5-illustration2.png" alt="">
+            <img class="d d2" src="images/page5-illustration3.png" alt="">
+            <img class="d d3" src="images/page5-illustration4.png" alt="">
+
+            <a href="page05.index.html"><img class="second" src="images/page5-illustration1.png"></a>
+
+            <img class="d d4" src="images/page5-illustration5.png" alt="">
+            <img class="d d5" src="images/page5-illustration6.png" alt="">
+            <img class="d d6" src="images/page5-illustration7.png" alt="">
+        </div>  
     </section>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script>
-$(".one").click(function(){
-    $("#first").fadeIn();
-    $("#first").fadeOut();
-    $("#second").fadeIn();
-    $("#second").fadeOut();
-});
+      function startThree() {
+        $('#dialog-anim').find('.d').addClass('fadeIn')
+      }
 </script>
 </html>

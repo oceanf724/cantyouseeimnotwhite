@@ -9,25 +9,19 @@
 </head>
 <body>
     <section id="one">
-        <img class="first" src="images/page3-text1.png" alt="narrative text 1">
+        <img class="first" src="images/page4-text1.png" alt="narrative text 1">
     </section>
-    <section id="two">
-        <a href="page04.index.html"><img id="second" src="images/page3-illustration.png" alt="illustration"></a>
-    </section>
-    <section id="third">
-        <img class="third" src="images/page3-text2.png" alt="narrative text 2">
+    <section id="four">
+        <a href="page04.index.html"><img class="second" src="images/page4-illustration.png" alt="illustration"></a>
     </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-$(".one").click(function(){
-    $("#first").fadeIn();
-});
-$(".two").click(function(){
-    $("#second").fadeIn();
-});
-$(".three").click(function(){
-    $("#third").fadeIn();
-});
+    let one = document.getElementById('one')
+    one.scrollIntoView({ block: 'start', behavior: 'instant' })
+    $('.first').click(function () {
+    let four = document.getElementById('four')
+    two.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    })
 </script>
 </html>

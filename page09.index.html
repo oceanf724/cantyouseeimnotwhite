@@ -9,19 +9,23 @@
 </head>
 <body>
     <section id="one">
-        <img class="second" src="images/page9-illustration1.png" alt="illustration 1">
+        <img src="images/page10-text1.png" alt="narrative text 1">
+    </section>
+    <section id="two">
+        <a href="page10.index.html"><img id="first" src="images/page10-illustration1.png" alt="illustration 2"></a>
 
-        <a href="page10.index.html"><img class="first" src="images/page9-text1.png" alt="narrative text 1"></a>
+        <a href="page10.index.html"><img id="second" src="images/page10-illustration2.png" alt="illustration 2"></a>
 
-        <img class="second" src="images/page9-illustration2.png" alt="illustration 2">
+        <a href="page10.index.html"><img id="third"  src="images/page10-illustration3.png" alt="illustration 2"></a>
     </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </script>
 <script>
-    $(".one").click(function(){
-        $("#first").fadeIn(slow);
-        $("#second").fadeIn(3000);
+    $(".two").click(function(){
+        $("#first").fadeIn();
+        $("#second").fadeIn(slow);
+        $("#third").fadeIn(3000);
     });
  </script>
 </html>

@@ -6,29 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Can't You See I'm Not White?</title>
-    <style>
-      body {
-        background-image: url('images/page7-background.png');
-      }
-      </style>
 </head>
 <body>
-  <section id="one">
-    <a href="page08.index.html"><img src="images/page7-illustration.png" alt="illustration"></a>
-</section>
-  <section id="two">
-    <img class="first" src="images/page7-text1.png" alt="narrative text 1">
-</section>
-<section id="three">
-    <img class="second" src="images/page7-text2.png" alt="narrative text 2">
+    <section id="one">
+        <img class="first" src="images/page8-illustration1.png" alt="illustration 1">
+    </section>
+    <section id="three">
+        <a href="page08.index.html"><img class="second" src="images/page8-illustration2.png" alt="illustration 2"></a>
+    </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script>
-$(".two").click(function(){
-    $("#first").fadeIn("slow");
-});
-$(".three").click(function(){
-    $("#second").fadeIn("slow");
-});
 </script>
+<script>
+    $(".one").click(function(){
+        $("#first").fadeIn();
+        $("#first").fadeOut();
+        $("#second").fadeIn();
+    });
+ </script>
 </html>
