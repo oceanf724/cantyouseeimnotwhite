@@ -35,7 +35,7 @@ section {
   background-color: #182565;
 }
 #two img {
-  width: 95%;
+  width: 50%;
 }
 #three {
   grid-column: 1/2;
@@ -46,8 +46,68 @@ section {
   grid-row: 3/4;
 }
 
+#five {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
 #five img {
+  width: 95%;
+}
+
+#six {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#six img {
   width: 100%;
+}
+
+.page05 #one .first {
+  position: absolute;
+  width: 40%;
+  top: -150px;
+  left: -20px;
+}
+
+.page05 #one .third {
+  position: absolute;
+  width: 40%;
+  bottom: -150px;
+  right: -20px;
+}
+
+.page05 #third {
+  position: relative;
+}
+
+.page05 third .fifth {
+  text-align: center;
+  position: absolute;
+  width: 45%;
+}
+
+.page05 #third .fourth {
+  position: absolute;
+  width: 40%;
+  top: -150px;
+  left: -20px;
+}
+
+.page05 #third .sixth {
+  position: absolute;
+  width: 40%;
+  bottom: -150px;
+  right: -20px;
+}
+
+.page05 #one {
+  position: relative;
+}
+
+.page05 #one .second {
+  text-align: center;
+  position: absolute;
+  width: 45%;
 }
 
 .fade-in-image { 
@@ -67,12 +127,17 @@ section {
 
 #dialog-anim {
   position: relative;
-  border: 1px solid red;
 }
+
+#dialog-anim #second {
+  z-index: 2;
+}
+
 #dialog-anim .d {
   position: absolute;
   opacity: 0; 
   transition: 500ms;
+  z-index: 1;
 }
 
 #dialog-anim .d1 {
