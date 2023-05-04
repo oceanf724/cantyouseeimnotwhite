@@ -51,7 +51,7 @@ section {
   grid-row: 2/3;
 }
 #five img {
-  width: 95%;
+  width: 98%;
 }
 
 #six {
@@ -108,6 +108,10 @@ section {
   text-align: center;
   position: absolute;
   width: 45%;
+}
+
+.page06 {
+    background-image: url('images/page7-background.png');
 }
 
 .fade-in-image { 
