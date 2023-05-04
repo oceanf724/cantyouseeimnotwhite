@@ -112,16 +112,26 @@ section {
 
 .page06 {
     background-image: url('images/page7-background.png');
+    background: cover;
+}
+
+.page06 section {
+  background: none;
 }
 
 .fade-in-image { 
   animation: fadeIn 3s; 
-  transition-delay: 250ms;
 }
 
 .fade-in-image-2 {
   animation: fadeIn 6s;
   transition-delay: 750ms;
+}
+
+.fade-in-image-hearts {
+  width: 24%;
+  animation: fadeIn 8s;
+  transition-delay: 12s;
 }
 
 @keyframes fadeIn {
