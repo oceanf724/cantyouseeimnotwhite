@@ -24,7 +24,20 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; 
+  position: relative;
 }
+
+section img.ux-guideheart {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  width: 100px;
+}
+
+section#eight .ux-guideheart {
+  right: 50%;
+}
+
 #one {
   grid-column: 2/3;
   grid-row: 1/2;
