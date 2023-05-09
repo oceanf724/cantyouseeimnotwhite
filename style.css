@@ -110,6 +110,10 @@ section img.ux-guideheart {
   position: relative;
 }
 
+.page05 #third img.ux-guideheart {
+  bottom: -50px;
+}
+
 .page05 third .fifth {
   text-align: center;
   position: absolute;
