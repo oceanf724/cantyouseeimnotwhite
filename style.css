@@ -34,14 +34,15 @@ section img.ux-guideheart {
   width: 100px;
 }
 
-section#eight .ux-guideheart {
-  right: 50%;
-}
-
 #one {
   grid-column: 2/3;
   grid-row: 1/2;
 }
+#one img.ux-guideheart {
+  bottom: 20px;
+  right: 675px;
+}
+
 #two {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -54,6 +55,15 @@ section#eight .ux-guideheart {
   grid-column: 1/2;
   grid-row: 2/3;
 }
+
+#three img {
+  width: 40vw;
+}
+
+#three img.ux-guideheart {
+  width: 100px;
+}
+
 #four {
   grid-column: 1/2;
   grid-row: 3/4;
@@ -66,6 +76,9 @@ section#eight .ux-guideheart {
 #five img {
   width: 98%;
 }
+#five img.ux-guideheart {
+  width: 100px;
+}
 
 #six {
   grid-column: 1/2;
@@ -73,6 +86,10 @@ section#eight .ux-guideheart {
 }
 #six img {
   width: 100%;
+}
+
+#six img.ux-guideheart {
+  width: 100px;
 }
 
 .page05 #one .first {
@@ -138,12 +155,12 @@ section#eight .ux-guideheart {
 
 .fade-in-image-2 {
   animation: fadeIn 6s;
-  transition-delay: 750ms;
+  transition-delay: 550ms;
 }
 
 .fade-in-image-hearts {
   width: 24%;
-  animation: fadeIn 8s;
+  animation: fadeIn 5s;
   transition-delay: 12s;
 }
 
